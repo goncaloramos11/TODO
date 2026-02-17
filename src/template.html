@@ -66,5 +66,57 @@
         </div>
 
     </div>
+
+    <dialog>
+        <div class="modal">
+            <div class="modal-title">
+                <span>Create a new...</span>
+                <button class="close">X</button>
+            </div>
+
+            <div class="side-bar-modal">
+                <ul>
+                    <li>To Do</li>
+                    <li>Project</li>
+                    <li>Note</li>
+                </ul>
+            </div>
+            <form method="dialog" class="main-dialog">
+                <div class="task-title-modal">
+                    <textarea id="title" name="title" maxlength="40" placeholder="Title: Doing JavaScript Lesson"></textarea>    
+                </div>
+
+                <div class="task-description-modal">
+                    <textarea id="description" name="description" placeholder="Details: internet, phone."></textarea>
+                </div>
+
+                <div class="data">
+                    <label for="create-data">Due Date:</label>
+                    <input type ="date" name="create-data" id="create-data"/>
+                </div>
+
+                <div class="create-priority-submit">
+                    <div class="wrapper">
+                        <label for="create-priority">Priority: </label>
+
+                        <div class="button-radio">
+                            <input type="radio" name="create-priority" id="create-low" value="low">
+                            <label for="low">Low</label>
+                        </div>
+                        <div class="button-radio">
+                            <input type="radio" name="create-priority" id="create-medium" value="medium">
+                            <label for="medium">Medium</label>
+                        </div>
+                        <div class="button-radio">
+                            <input type="radio" name="create-priority" id="create-high" value="high">
+                            <label for="high">High</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-task">ADD TO DO</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
 </body>
 </html>

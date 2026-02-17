@@ -134,6 +134,140 @@ ul>li{
     background-color: var(--info-background);
     padding:40px;
 }
-/* PARA ALTERAR MAIS TARDE */
+/* Dialog */
 
 
+dialog {
+    margin: auto;
+    border: none;
+    border-radius: 8px;
+
+    box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.75);
+
+}
+
+.modal{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 50px 1fr;
+    width: 800px;
+    height: 400px;
+    grid-template-areas:
+        "hd hd"
+        "sbm md"
+}
+
+.modal-title{
+    grid-area: hd;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-background);
+    color:var(--header-color)
+}
+
+.side-bar-modal{
+    grid-area: sbm;
+    background-color: var(--side-bar-background);
+    border-right: 1px solid black;
+}
+
+
+.main-dialog{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    grid-area: md;
+    padding: 10px;
+    background-color: var(--info-background);
+}
+
+.task-title-modal{
+    border: none;
+}
+
+#title,
+#description{
+    border: none;
+    resize: none;
+    width: 100%;
+}
+
+
+#description{
+    height: 150px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.button-radio{
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.create-priority-submit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input[type=radio] + label{
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#create-low + label{
+    border:1px solid green;
+    color: green;
+}
+
+#create-medium + label{
+    border:1px solid orange;
+    color: orange;
+}
+
+#create-high + label{
+    border:1px solid red;
+    color: red;
+}
+
+#create-low + label:hover
+{
+    background-color: green;
+    color:white;
+}
+
+#create-medium + label:hover
+{
+    background-color: orange;
+    color:white;
+}
+
+#create-high + label:hover
+{
+    background-color: red;
+    color:white;
+}
+
+#create-high:checked + label{
+    background-color: red;
+    color: white;
+}
+
+
+
+dialog::backdrop {
+  background: rgba(0,0,0,0.5);
+}
