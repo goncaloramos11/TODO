@@ -7,7 +7,7 @@
 
  export default {
    entry: {
-     app: './src/index.js',
+     app: './src/scripts/index.js',
    },
    plugins: [
      new HtmlWebpackPlugin({

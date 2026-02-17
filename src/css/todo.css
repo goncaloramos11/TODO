@@ -1,0 +1,48 @@
+.info{
+    display: grid;
+    gap:10px;
+    height: 505px;
+    grid-auto-rows: 50px;
+    overflow-y: auto;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+    padding: 0px 10px;
+    border-left: 3px solid red;
+    background-color: var(--side-bar-background);
+}
+
+.left-side{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.right-side{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.details{
+    padding: 6px 12px;
+    background-color: var(--side-bar-background);
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.details:hover{
+    background-color: rgba(0, 0, 0, 0.438);
+    color:white;
+}
+
+.edit,
+.remove{
+    font-size: 25px;
+    cursor: pointer;
+}
