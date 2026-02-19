@@ -12,8 +12,19 @@
     justify-content: space-between;
     gap:10px;
     padding: 0px 10px;
-    border-left: 3px solid red;
     background-color: var(--side-bar-background);
+}
+
+.task.high {
+    border-left: 3px solid red;
+}
+
+.task.medium {
+    border-left: 3px solid orange;
+}
+
+.task.low {
+    border-left: 3px solid green;
 }
 
 .left-side{

@@ -1,5 +1,5 @@
 import "../css/todo.css";
-
+import {format } from "date-fns";
 
 export function createTaskElement(task){
 
@@ -7,6 +7,10 @@ export function createTaskElement(task){
 
     const taskElement = document.createElement("div");
     taskElement.classList.add("task");
+
+    if (task.priority) {
+        taskElement.classList.add(task.priority.toLowerCase());
+    }
 
     const leftElement = document.createElement("div");
     leftElement.classList.add("left-side");
@@ -31,7 +35,7 @@ export function createTaskElement(task){
 
     const span = document.createElement("span");
     span.setAttribute("class", "date");
-    span.textContent = task.dueDate;
+    span.textContent = format(task.dueDate, "dd-MM");
 
     const edit = document.createElement("div");
     edit.setAttribute("class", "edit");

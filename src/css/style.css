@@ -126,6 +126,7 @@ ul>li{
     font-size: var(--button-add-size);
     width: var(--button-add-width);
     box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.75);
+    cursor: pointer;
 }
 
 
@@ -203,71 +204,3 @@ textarea:focus{
     outline: none;
 }
 
-.button-radio{
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 30px;
-}
-
-.create-priority-submit{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-input[type=radio] + label{
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#create-low + label{
-    border:1px solid green;
-    color: green;
-}
-
-#create-medium + label{
-    border:1px solid orange;
-    color: orange;
-}
-
-#create-high + label{
-    border:1px solid red;
-    color: red;
-}
-
-#create-low + label:hover
-{
-    background-color: green;
-    color:white;
-}
-
-#create-medium + label:hover
-{
-    background-color: orange;
-    color:white;
-}
-
-#create-high + label:hover
-{
-    background-color: red;
-    color:white;
-}
-
-#create-high:checked + label{
-    background-color: red;
-    color: white;
-}
-
-
-
-dialog::backdrop {
-  background: rgba(0,0,0,0.5);
-}

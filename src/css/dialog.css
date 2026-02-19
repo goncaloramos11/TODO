@@ -1,0 +1,89 @@
+.button-radio{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.create-priority-submit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+input[type=radio] + label{
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#create-low + label{
+    border:1px solid green;
+    color: green;
+}
+
+#create-medium + label{
+    border:1px solid orange;
+    color: orange;
+}
+
+#create-high + label{
+    border:1px solid red;
+    color: red;
+}
+
+#create-low + label:hover,
+#create-low:checked + label
+{
+    background-color: green;
+    color:white;
+}
+
+#create-medium + label:hover,
+#create-medium:checked + label
+{
+    background-color: orange;
+    color:white;
+}
+
+#create-high + label:hover,
+#create-high:checked + label
+{
+    background-color: red;
+    color:white;
+}
+
+.submit-task{
+    padding: 6px 12px;
+    background-color: var(--info-background);
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.submit-task:hover{
+    background-color: rgba(0, 0, 0, 0.808);
+    color:white;
+}
+
+dialog::backdrop {
+  background: rgba(0,0,0,0.5);
+}
+
+.close{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
