@@ -184,10 +184,6 @@ dialog {
     background-color: var(--info-background);
 }
 
-.task-title-modal{
-    border: none;
-}
-
 #title,
 #description{
     border: none;

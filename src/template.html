@@ -41,7 +41,7 @@
                     </div>
                     <div class="right-side">
                         <button class="details">DETAILS</button>
-                        <span class="date">2 Junho</span>
+                        <span class="date">23/02</span>
                         <div class="edit">📝</div>
                         <div class="remove">🗑️</div>
                     </div>
@@ -54,7 +54,7 @@
                     </div>
                     <div class="right-side">
                         <button class="details">DETAILS</button>
-                        <span class="date">2 Junho</span>
+                        <span class="date">30/11</span>
                         <div class="edit">📝</div>
                         <div class="remove">🗑️</div>
                     </div>
@@ -76,44 +76,12 @@
 
             <div class="side-bar-modal">
                 <ul>
-                    <li>To Do</li>
-                    <li>Project</li>
-                    <li>Note</li>
+                    <li class="option button-todo">To Do</li>
+                    <li class="option button-project">Project</li>
+                    <li class="option button-note">Note</li>
                 </ul>
             </div>
-            <form method="POST" class="main-dialog">
-                <div class="task-title-modal">
-                    <textarea id="title" name="title" maxlength="40" placeholder="Title: Doing JavaScript Lesson" required></textarea>    
-                </div>
-
-                <div class="task-description-modal">
-                    <textarea id="description" name="description" placeholder="Details: internet, phone." required></textarea>
-                </div>
-
-                <div class="data">
-                    <label for="create-data">Due Date:</label>
-                    <input type ="date" name="create-data" id="create-data" required>
-                </div>
-
-                <div class="create-priority-submit">
-                    <div class="wrapper">
-                        <span>Priority:</span>
-
-                        <div class="button-radio">
-                            <input type="radio" name="create-priority" id="create-low" value="low" checked>
-                            <label for="create-low">Low</label>
-
-                            <input type="radio" name="create-priority" id="create-medium" value="medium">
-                            <label for="create-medium">Medium</label>
-                            
-                            <input type="radio" name="create-priority" id="create-high" value="high">
-                            <label for="create-high">High</label>
-                        </div>
-
-                    </div>
-
-                    <button type="submit" class="submit-task">ADD TO DO</button>
-                </div>
+            <form class="main-dialog">
             </form>
         </div>
     </dialog>

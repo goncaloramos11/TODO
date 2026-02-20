@@ -1,6 +1,4 @@
-import { sub } from "date-fns";
-import "../css/dialog.css";
-
+import "../../css/dialog.css";
 
 export function setupDialog(){
     const dialog = document.querySelector("dialog");

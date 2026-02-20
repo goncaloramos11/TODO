@@ -1,4 +1,4 @@
-import "../css/todo.css";
+import "../../css/todo.css";
 import {format } from "date-fns";
 
 export function createTaskElement(task){
