@@ -6,9 +6,9 @@ export function createProjectElement(project){
     const span = document.createElement("span");
     const div = document.createElement("div");
 
+    li.dataset.projectId = project.title
     span.textContent=project.title;
 
-    div.classList = project.title;
     div.classList.add("count");
 
     div.textContent = "8";

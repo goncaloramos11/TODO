@@ -135,6 +135,10 @@ ul>li{
     background-color: var(--info-background);
     padding:40px;
 }
+
+.selected{
+    font-weight: bold;
+}
 /* Dialog */
 
 

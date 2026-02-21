@@ -2,9 +2,9 @@ import {renderTaskForm } from "./taskForm.js";
 import {renderProjectForm} from "./projectForm.js";
 import {renderNoteForm} from "./noteForm.js";
 import {getTaskFromForm} from "./taskForm.js";
-import { createTaskElement } from "../ui/tasksUI.js";
-import { createProjectElement } from "../ui/projectsUI.js";
 import { getProjectFromForm } from "./projectForm.js";
+import { addTask } from "../logic/taskManager.js";
+import { createProjectElement } from "../ui/projectsUI.js";
 
 function initFormSubmit( {getData, onCreate}) {
 
@@ -32,7 +32,7 @@ export function renderForm(){
     const buttonNote = document.querySelector(".button-note");
 
     let currentGetData = getTaskFromForm;
-    let currentOnCreate = createTaskElement;
+    let currentOnCreate = addTask;
 
     initFormSubmit({
         getData: () => currentGetData(document.querySelector(".main-dialog")),
@@ -42,7 +42,7 @@ export function renderForm(){
     buttonTodo.addEventListener("click", () => {
         renderTaskForm();
         currentGetData = getTaskFromForm;
-        currentOnCreate = createTaskElement;
+        currentOnCreate = addTask;
     });
 
     buttonProject.addEventListener("click", () => {

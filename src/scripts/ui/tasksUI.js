@@ -4,7 +4,6 @@ import {format } from "date-fns";
 export function createTaskElement(task){
 
     const info = document.querySelector(".info");
-
     const taskElement = document.createElement("div");
     taskElement.classList.add("task");
 

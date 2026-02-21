@@ -1,16 +1,17 @@
 import { Task } from "../models/task.js";
-
+import {getActiveProjectId} from "../logic/projectSelected.js"
 
 export function getTaskFromForm(task) {
 
     const title = task.querySelector("#title").value;
     const description = task.querySelector("#description").value;
     const date = task.querySelector("#create-data").value;
+    const project = getActiveProjectId();
     const priority = task.querySelector(
         'input[name="create-priority"]:checked'
     )?.value;
 
-    return new Task(title, description, date, priority);
+    return new Task(title, description, date,project, priority);
 }
 
 export function renderTaskForm(){
