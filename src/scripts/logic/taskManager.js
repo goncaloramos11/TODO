@@ -8,6 +8,7 @@ export function addTask(task) {
     task.projectId = getActiveProjectId();
 
     tasks.push(task);
+    
     updateAllTaskCounts();
     createTaskElement(task);
 

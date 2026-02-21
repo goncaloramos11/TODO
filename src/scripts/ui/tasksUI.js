@@ -53,4 +53,6 @@ export function createTaskElement(task){
     taskElement.appendChild(rightElement);
 
     info.appendChild(taskElement);
+
+    return taskElement;
 }

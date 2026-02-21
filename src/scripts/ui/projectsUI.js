@@ -11,7 +11,7 @@ export function createProjectElement(project){
 
     div.classList.add("count");
 
-    div.textContent = "8";
+    div.textContent = "0";
 
     li.appendChild(span);
     li.appendChild(div);
